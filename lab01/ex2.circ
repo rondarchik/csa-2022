@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project source="3.4.3-61c.7ae7f66" version="1.0">
+<project source="3.3.6" version="1.0">
   This file is intended to be loaded by Logisim-evolution (https://github.com/reds-heig/logisim-evolution).
 
   <lib desc="#Wiring" name="0">
@@ -125,13 +125,11 @@
     <comp lib="0" loc="(100,210)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="label" val="clk"/>
-      <a name="locked" val="true"/>
     </comp>
     <comp lib="0" loc="(480,180)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
       <a name="label" val="ADD_OUT"/>
-      <a name="locked" val="true"/>
       <a name="output" val="true"/>
       <a name="width" val="8"/>
     </comp>
@@ -139,9 +137,37 @@
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
       <a name="label" val="REG_OUT"/>
-      <a name="locked" val="true"/>
       <a name="output" val="true"/>
       <a name="width" val="8"/>
     </comp>
+    <comp lib="0" loc="(50,120)" name="Constant">
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="2" loc="(110,130)" name="Adder"/>
+    <comp lib="3" loc="(170,140)" name="Register">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <wire from="(100,210)" to="(170,210)"/>
+    <wire from="(110,130)" to="(120,130)"/>
+    <wire from="(120,130)" to="(120,170)"/>
+    <wire from="(120,130)" to="(380,130)"/>
+    <wire from="(120,170)" to="(170,170)"/>
+    <wire from="(20,140)" to="(20,260)"/>
+    <wire from="(20,140)" to="(70,140)"/>
+    <wire from="(20,260)" to="(270,260)"/>
+    <wire from="(230,170)" to="(270,170)"/>
+    <wire from="(270,170)" to="(270,260)"/>
+    <wire from="(270,170)" to="(340,170)"/>
+    <wire from="(340,170)" to="(340,240)"/>
+    <wire from="(340,240)" to="(480,240)"/>
+    <wire from="(380,130)" to="(380,180)"/>
+    <wire from="(380,180)" to="(480,180)"/>
+    <wire from="(50,120)" to="(70,120)"/>
   </circuit>
 </project>
+<!--Thu Feb 24 16:28:24 2022-->
+<!--/home/viki/github/csa-2022/lab01-->
+<!--viki-->
+<!--Fri Feb 25 19:41:21 2022-->
+<!--/home/viki/github/csa-2022/lab01-->
+<!--viki-->

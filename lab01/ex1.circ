@@ -136,8 +136,9 @@
       <a name="appearance" val="NewPins"/>
       <a name="label" val="A"/>
     </comp>
-    <comp lib="1" loc="(210,120)" name="AND Gate"/>
-    <comp lib="1" loc="(240,120)" name="NOT Gate"/>
+    <comp lib="1" loc="(190,100)" name="NOT Gate"/>
+    <comp lib="1" loc="(190,140)" name="NOT Gate"/>
+    <comp lib="1" loc="(240,120)" name="OR Gate"/>
     <wire from="(240,120)" to="(290,120)"/>
     <wire from="(90,100)" to="(160,100)"/>
     <wire from="(90,140)" to="(160,140)"/>
@@ -166,8 +167,9 @@
       <a name="appearance" val="NewPins"/>
       <a name="label" val="A"/>
     </comp>
-    <comp lib="1" loc="(200,120)" name="OR Gate"/>
-    <comp lib="1" loc="(230,120)" name="NOT Gate"/>
+    <comp lib="1" loc="(180,100)" name="NOT Gate"/>
+    <comp lib="1" loc="(180,140)" name="NOT Gate"/>
+    <comp lib="1" loc="(230,120)" name="AND Gate"/>
     <wire from="(230,120)" to="(290,120)"/>
     <wire from="(90,100)" to="(150,100)"/>
     <wire from="(90,140)" to="(150,140)"/>
@@ -250,28 +252,27 @@
       <a name="appearance" val="NewPins"/>
       <a name="label" val="A"/>
     </comp>
-    <comp lib="1" loc="(150,240)" name="NOT Gate"/>
+    <comp lib="1" loc="(170,120)" name="NOT Gate"/>
     <comp lib="1" loc="(240,100)" name="AND Gate"/>
     <comp lib="1" loc="(240,180)" name="AND Gate"/>
     <comp lib="1" loc="(360,120)" name="OR Gate"/>
+    <wire from="(110,120)" to="(110,210)"/>
+    <wire from="(110,120)" to="(140,120)"/>
+    <wire from="(110,210)" to="(140,210)"/>
     <wire from="(140,150)" to="(140,160)"/>
     <wire from="(140,160)" to="(190,160)"/>
+    <wire from="(140,200)" to="(140,210)"/>
+    <wire from="(140,200)" to="(190,200)"/>
     <wire from="(140,80)" to="(140,90)"/>
     <wire from="(140,80)" to="(190,80)"/>
-    <wire from="(150,240)" to="(180,240)"/>
-    <wire from="(160,120)" to="(160,210)"/>
-    <wire from="(160,120)" to="(190,120)"/>
-    <wire from="(180,200)" to="(180,240)"/>
-    <wire from="(180,200)" to="(190,200)"/>
+    <wire from="(170,120)" to="(190,120)"/>
     <wire from="(240,100)" to="(310,100)"/>
     <wire from="(240,180)" to="(290,180)"/>
     <wire from="(290,140)" to="(290,180)"/>
     <wire from="(290,140)" to="(310,140)"/>
     <wire from="(360,120)" to="(430,120)"/>
     <wire from="(90,150)" to="(140,150)"/>
-    <wire from="(90,210)" to="(160,210)"/>
-    <wire from="(90,210)" to="(90,240)"/>
-    <wire from="(90,240)" to="(120,240)"/>
+    <wire from="(90,210)" to="(110,210)"/>
     <wire from="(90,90)" to="(140,90)"/>
   </circuit>
   <circuit name="MUX4">
@@ -340,3 +341,12 @@
     <wire from="(90,70)" to="(170,70)"/>
   </circuit>
 </project>
+<!--Thu Feb 24 16:11:07 2022-->
+<!--/home/viki/github/csa-2022/lab01-->
+<!--viki-->
+<!--Thu Feb 24 16:28:23 2022-->
+<!--/home/viki/github/csa-2022/lab01-->
+<!--viki-->
+<!--Fri Feb 25 19:41:19 2022-->
+<!--/home/viki/github/csa-2022/lab01-->
+<!--viki-->
