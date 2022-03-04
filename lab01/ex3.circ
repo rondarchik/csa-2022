@@ -142,10 +142,6 @@
     <comp lib="1" loc="(560,80)" name="AND Gate">
       <a name="size" val="30"/>
     </comp>
-    <comp lib="2" loc="(750,192)" name="Text">
-      <a name="font" val="SansSerif plain 12"/>
-      <a name="text" val="Должен выводить отрицательное значение"/>
-    </comp>
     <wire from="(220,80)" to="(230,80)"/>
     <wire from="(250,70)" to="(360,70)"/>
     <wire from="(250,80)" to="(320,80)"/>
@@ -162,6 +158,9 @@
     <wire from="(560,80)" to="(690,80)"/>
   </circuit>
 </project>
-<!--Fri Feb 25 19:41:22 2022-->
+<!--Tue Mar  1 23:11:50 2022-->
+<!--/home/viki/github/csa-2022/lab01-->
+<!--viki-->
+<!--Sat Mar  5 02:53:22 2022-->
 <!--/home/viki/github/csa-2022/lab01-->
 <!--viki-->
