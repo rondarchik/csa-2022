@@ -1,0 +1,29 @@
+D:/csa-2022/lab02/Task2/sword.sv {1 {vlog -work work -sv -stats=none D:/csa-2022/lab02/Task2/sword.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module sword
+
+Top level modules:
+	sword
+
+} {} {}} D:/csa-2022/lab02/Task2/testbench.sv {1 {vlog -work work -sv -stats=none D:/csa-2022/lab02/Task2/testbench.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module testbench
+
+Top level modules:
+	testbench
+
+} {} {}} D:/csa-2022/lab02/Task2/room.sv {1 {vlog -work work -sv -stats=none D:/csa-2022/lab02/Task2/room.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module room
+
+Top level modules:
+	room
+
+} {} {}} D:/csa-2022/lab02/Task2/game.sv {1 {vlog -work work -sv -stats=none D:/csa-2022/lab02/Task2/game.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module game
+
+Top level modules:
+	game
+
+} {} {}}

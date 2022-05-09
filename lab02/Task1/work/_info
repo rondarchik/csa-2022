@@ -1,0 +1,82 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_lite/18.1
+vflopr
+Z0 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z1 !s110 1651412659
+!i10b 1
+!s100 6BN3cU6JkH9;^SO8oRgS>0
+I=8:Na@;nO4[KPTW4;hoed1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+!s105 flopr_sv_unit
+S1
+Z3 dD:/csa-2022/lab02/Task1
+w1651406676
+8D:/csa-2022/lab02/Task1/flopr.sv
+FD:/csa-2022/lab02/Task1/flopr.sv
+L0 1
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1651412659.000000
+!s107 D:/csa-2022/lab02/Task1/flopr.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/csa-2022/lab02/Task1/flopr.sv|
+!i113 1
+Z6 o-work work -sv
+Z7 tCvgOpt 0
+vlab2_10
+R0
+R1
+!i10b 1
+!s100 @5a42c8CDf72M7=`R]Gdo3
+II7ILHJlBa0LjaV3=bR7:a2
+R2
+!s105 lab2_10_sv_unit
+S1
+R3
+w1651408205
+8D:/csa-2022/lab02/Task1/lab2_10.sv
+FD:/csa-2022/lab02/Task1/lab2_10.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/csa-2022/lab02/Task1/lab2_10.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/csa-2022/lab02/Task1/lab2_10.sv|
+!i113 1
+R6
+R7
+vtestbench
+R0
+R1
+!i10b 1
+!s100 F:Yl3]OcVL<4_hm5;9b062
+IYjGKjmo6I>dkeLzKI886d3
+R2
+!s105 testbench_sv_unit
+S1
+R3
+w1651406591
+8D:/csa-2022/lab02/Task1/testbench.sv
+FD:/csa-2022/lab02/Task1/testbench.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/csa-2022/lab02/Task1/testbench.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/csa-2022/lab02/Task1/testbench.sv|
+!i113 1
+R6
+R7

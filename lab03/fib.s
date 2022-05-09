@@ -6,7 +6,6 @@ main:
     add t0, x0, x0 # curr_fib = 0
     addi t1, x0, 1 # next_fib = 1
     la t3, n # получить адрес метки n
-    lw t3, 0(t3) # получить значение хранимое по адресу метки n
 fib:
     beq t3, x0, finish # выход из цикла после n итераций
     add t2, t1, t0 # new_fib = curr_fib + next_fib;

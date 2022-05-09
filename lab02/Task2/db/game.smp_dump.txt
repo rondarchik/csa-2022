@@ -1,0 +1,11 @@
+
+State Machine - |game|room:room_state|state
+Name state.DC state.VV state.DL state.SC state.SR state.DE state.WT state.CC 
+state.CC 0 0 0 0 0 0 0 0 
+state.WT 0 0 0 0 0 0 1 1 
+state.DE 0 0 0 0 0 1 0 1 
+state.SR 0 0 0 0 1 0 0 1 
+state.SC 0 0 0 1 0 0 0 1 
+state.DL 0 0 1 0 0 0 0 1 
+state.VV 0 1 0 0 0 0 0 1 
+state.DC 1 0 0 0 0 0 0 1 

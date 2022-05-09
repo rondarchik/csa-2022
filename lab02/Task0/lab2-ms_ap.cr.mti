@@ -1,0 +1,15 @@
+D:/csa-2022/lab02/Task0/fulladder.sv {1 {vlog -work work -sv -stats=none D:/csa-2022/lab02/Task0/fulladder.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module fulladder
+
+Top level modules:
+	fulladder
+
+} {} {}} D:/csa-2022/lab02/Task0/testbench.sv {1 {vlog -work work -sv -stats=none D:/csa-2022/lab02/Task0/testbench.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module testbench
+
+Top level modules:
+	testbench
+
+} {} {}}
