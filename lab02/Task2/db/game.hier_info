@@ -1,0 +1,51 @@
+|game
+clk => clk.IN2
+reset => reset.IN2
+N => N.IN1
+S => S.IN1
+E => E.IN1
+W => W.IN1
+Win << room:room_state.port7
+Die << room:room_state.port8
+
+
+|game|room:room_state
+clk => state~1.DATAIN
+reset => state~3.DATAIN
+N => nextstate.OUTPUTSELECT
+N => nextstate.OUTPUTSELECT
+N => nextstate.OUTPUTSELECT
+N => Selector1.IN4
+S => nextstate.OUTPUTSELECT
+S => nextstate.OUTPUTSELECT
+S => nextstate.OUTPUTSELECT
+S => Selector3.IN3
+E => nextstate.OUTPUTSELECT
+E => nextstate.OUTPUTSELECT
+E => Selector1.IN5
+E => nextstate.DATAA
+E => Selector6.IN4
+E => nextstate.DATAA
+E => Selector3.IN4
+E => Selector0.IN1
+E => nextstate.DATAA
+E => Selector4.IN1
+W => nextstate.OUTPUTSELECT
+W => nextstate.OUTPUTSELECT
+W => nextstate.DATAA
+W => nextstate.DATAA
+W => nextstate.DATAA
+sword_in => Selector5.IN3
+sword_in => Selector6.IN2
+Win <= Win.DB_MAX_OUTPUT_PORT_TYPE
+Die <= Die.DB_MAX_OUTPUT_PORT_TYPE
+sword_out <= sword_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|game|sword:sword_state
+clk => state.CLK
+reset => state.ACLR
+sword_in => nextstate.DATAB
+sword_out <= state.DB_MAX_OUTPUT_PORT_TYPE
+
+

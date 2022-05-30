@@ -1,0 +1,106 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/csa-2022/lab02/Task2.0
+vgame
+Z0 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z1 !s110 1652137530
+!i10b 1
+!s100 MhoNM;Pb4Q=5<A6dGmCN^2
+IoObG4IJF;7`Y757]2m6GF0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+!s105 game_sv_unit
+S1
+Z3 dD:/csa-2022/lab02/Task2
+w1652135478
+8D:/csa-2022/lab02/Task2/game.sv
+FD:/csa-2022/lab02/Task2/game.sv
+L0 1
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1652137530.000000
+!s107 D:/csa-2022/lab02/Task2/game.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/csa-2022/lab02/Task2/game.sv|
+!i113 1
+Z6 o-work work -sv
+Z7 tCvgOpt 0
+vroom
+R0
+R1
+!i10b 1
+!s100 @8b>5MWlAFN@PJFN:VhL^2
+IUmHYTk=_3958<TSINRbk`1
+R2
+!s105 room_sv_unit
+S1
+R3
+w1652137498
+8D:/csa-2022/lab02/Task2/room.sv
+FD:/csa-2022/lab02/Task2/room.sv
+L0 2
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/csa-2022/lab02/Task2/room.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/csa-2022/lab02/Task2/room.sv|
+!i113 1
+R6
+R7
+vsword
+R0
+R1
+!i10b 1
+!s100 dJh@a8=mEPHQH_^4WcJlc3
+I^E>KoJE@m?2GEL0h:?_>=2
+R2
+!s105 sword_sv_unit
+S1
+R3
+w1652135285
+8D:/csa-2022/lab02/Task2/sword.sv
+FD:/csa-2022/lab02/Task2/sword.sv
+L0 2
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/csa-2022/lab02/Task2/sword.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/csa-2022/lab02/Task2/sword.sv|
+!i113 1
+R6
+R7
+vtestbench
+R0
+!s110 1652137531
+!i10b 1
+!s100 4MYWB_@LH_gJ2izE68a6U3
+Ilj]VkP71REAV8l^aFAARQ3
+R2
+!s105 testbench_sv_unit
+S1
+R3
+w1652137044
+8D:/csa-2022/lab02/Task2/testbench.sv
+FD:/csa-2022/lab02/Task2/testbench.sv
+L0 1
+R4
+r1
+!s85 0
+31
+!s108 1652137531.000000
+!s107 D:/csa-2022/lab02/Task2/testbench.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/csa-2022/lab02/Task2/testbench.sv|
+!i113 1
+R6
+R7

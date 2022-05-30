@@ -1,0 +1,22 @@
+D:/csa-2022/lab02/Task1/testbench.sv {1 {vlog -work work -sv -stats=none D:/csa-2022/lab02/Task1/testbench.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module testbench
+
+Top level modules:
+	testbench
+
+} {} {}} D:/csa-2022/lab02/Task1/lab2_10.sv {1 {vlog -work work -sv -stats=none D:/csa-2022/lab02/Task1/lab2_10.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module lab2_10
+
+Top level modules:
+	lab2_10
+
+} {} {}} D:/csa-2022/lab02/Task1/flopr.sv {1 {vlog -work work -sv -stats=none D:/csa-2022/lab02/Task1/flopr.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module flopr
+
+Top level modules:
+	flopr
+
+} {} {}}
