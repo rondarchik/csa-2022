@@ -2,16 +2,20 @@
 # This program accesses an array in ways that provide data about the cache parameters.
 # Coupled with the Data Cache Simulator and Memory Reference Visualization to help students
 #    understand how the cache parameters affect cache performance.
+# Эта программа обращается к массиву способами, которые предоставляют данные о параметрах кэша.
+# В сочетании с симулятором кэша данных и визуализацией ссылок на память, чтобы помочь учащимся
+# понять, как параметры кэша влияют на производительность кэша.
 #
 # PSEUDOCODE:
 #    int array[];                           //Assume sizeof(int) == 4
-#    for (k = 0; k < repcount; k++) {		    // repeat repcount times
+#    for (k = 0; k < repcount; k++) {		    // repeat repcount times (повторите количество повторений)
 #      /* Step through the selected array segment with the given step size. */
+#      /* Пройдите по выбранному сегменту массива с заданным размером шага. */
 #      for (index = 0; index < arraysize; index += stepsize) {
 #        if(option==0)
-#          array[index] = 0;			          // Option 0: One cache access - write
+#          array[index] = 0;			          // Option 0: One cache access - write (Один доступ к кэшу - запись)
 #        else
-#          array[index] = array[index] + 1;	// Option 1: Two cache accesses - read AND write
+#          array[index] = array[index] + 1;	// Option 1: Two cache accesses - read AND write (Два доступа к кэшу - чтение И запись)
 #      }
 #    }
 
@@ -19,14 +23,33 @@
 array:	.word	2048		                      # max array size specified in BYTES (DO NOT CHANGE)
 
 .text
+
 ##################################################################################################
-# You MAY change the code below this section
-main:	li	a0, 256		# array size in BYTES (power of 2 < array size)
-	li	a1, 2		# step size  (power of 2 > 0)
-	li	a2, 1		# rep count  (int > 0)
-	li	a3, 1		# 0 - option 0, 1 - option 1
-# You MAY change the code above this section
+# Scenario 1
+#main:	li	a0, 128		# array size in BYTES (power of 2 < array size)
+#		li	a1, 8		# step size  (power of 2 > 0)
+#		li	a2, 4		# rep count  (int > 0)
+#		li	a3, 0		# 0 - option 0, 1 - option 1
 ##################################################################################################
+
+
+##################################################################################################
+# Scenario 2
+#main:	li	a0, 256		# array size in BYTES (power of 2 < array size)
+#		li	a1, 2		# step size  (power of 2 > 0)
+#		li	a2, 1		# rep count  (int > 0)
+#		li	a3, 1		# 0 - option 0, 1 - option 1
+##################################################################################################
+
+
+##################################################################################################
+# Scenario 3
+#main:	li	a0, 128		# array size in BYTES (power of 2 < array size)
+#		li	a1, 1		# step size  (power of 2 > 0)
+#		li	a2, 1		# rep count  (int > 0)
+#		li	a3, 0		# 0 - option 0, 1 - option 1
+##################################################################################################
+
 
 	jal	accessWords	# lw/sw
 
@@ -42,9 +65,9 @@ main:	li	a0, 256		# array size in BYTES (power of 2 < array size)
 #  s1 = array limit (ptr)
 
 accessWords:
-	la	s0, array		                          # ptr to array
-	add	s1, s0, a0		                        # hardcode array limit (ptr)
-	slli	t1, a1, 2		                        # multiply stepsize by 4 because WORDS
+	la	s0, array		                          # ptr to array s0 = 0
+	add	s1, s0, a0		                        # hardcode array limit (ptr) s1 = s0 + 128
+	slli	t1, a1, 2		                        # multiply stepsize by 4 because WORDS -> t1 = a1*2^2
 wordLoop:
 	beq	a3, zero,  wordZero
 
@@ -54,15 +77,19 @@ wordLoop:
 	j	wordCheck
 
 wordZero:
-	sw	zero,  0(s0)		                      # array[index/4] = 0
+	sw	zero,  0(s0)		                      # array[index/4] = 0, accesses += 1
 
 wordCheck:
-	add	s0, s0, t1		                        # increment ptr
+	add	s0, s0, t1		                        # increment ptr -> #s0 = s0 + t1 (t1 = a1*2^2)
 	blt	s0, s1, wordLoop	                    # inner loop done?
+												# if s0 < s1(=128) -> wordZero	
+												# else (>=) continue loop 
 
-	addi	a2, a2, -1
+	addi	a2, a2, -1							# a2 -= 1
 	bgtz	a2, accessWords	                    # outer loop done?
-	jr	ra
+												# if a2 > 0 -> accessWords
+												# else
+	jr	ra										# finish
 
 
 accessBytes:

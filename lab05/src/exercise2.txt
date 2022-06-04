@@ -1,2 +1,24 @@
-1.
-2.
+Test 1
+ijk:	n = 1000, 1.670 Gflop/s
+ikj:	n = 1000, 0.254 Gflop/s
+jik:	n = 1000, 1.670 Gflop/s
+jki:	n = 1000, 11.807 Gflop/s
+kij:	n = 1000, 0.255 Gflop/s
+kji:	n = 1000, 10.246 Gflop/s
+Test 2
+ijk:	n = 1000, 1.809 Gflop/s
+ikj:	n = 1000, 0.252 Gflop/s
+jik:	n = 1000, 1.703 Gflop/s
+jki:	n = 1000, 12.040 Gflop/s
+kij:	n = 1000, 0.249 Gflop/s
+kji:	n = 1000, 9.530 Gflop/s
+Test 3
+ijk:	n = 1000, 1.783 Gflop/s
+ikj:	n = 1000, 0.255 Gflop/s
+jik:	n = 1000, 1.711 Gflop/s
+jki:	n = 1000, 11.938 Gflop/s
+kij:	n = 1000, 0.259 Gflop/s
+kji:	n = 1000, 8.949 Gflop/s
+
+1. Можно сделать вывод, что лучше всего подходят обходы jki и kji 
+2. Хуже всего: ikj и kij

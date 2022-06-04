@@ -1,0 +1,6 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/rondarchik/csa-2022/lab05/src'
+gcc -o matrixMultiply -ggdb -Wall -pedantic -std=gnu99 -O3 matrixMultiply.c
+./matrixMultiply
+make: Leaving directory '/home/rondarchik/csa-2022/lab05/src'
+ 
