@@ -1,0 +1,14 @@
+
+State Machine - |controller|main_state_machine:msm|state
+Name state.BEQ state.JAL state.ExecuteI state.ALUWB state.ExecureR state.MEMWrite state.MemWB state.MemRead state.MemAdr state.Decode state.Fetch 
+state.Fetch 0 0 0 0 0 0 0 0 0 0 0 
+state.Decode 0 0 0 0 0 0 0 0 0 1 1 
+state.MemAdr 0 0 0 0 0 0 0 0 1 0 1 
+state.MemRead 0 0 0 0 0 0 0 1 0 0 1 
+state.MemWB 0 0 0 0 0 0 1 0 0 0 1 
+state.MEMWrite 0 0 0 0 0 1 0 0 0 0 1 
+state.ExecureR 0 0 0 0 1 0 0 0 0 0 1 
+state.ALUWB 0 0 0 1 0 0 0 0 0 0 1 
+state.ExecuteI 0 0 1 0 0 0 0 0 0 0 1 
+state.JAL 0 1 0 0 0 0 0 0 0 0 1 
+state.BEQ 1 0 0 0 0 0 0 0 0 0 1 

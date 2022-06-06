@@ -1,0 +1,18 @@
+D:/csa-2022/lab04/task2/maindec.sv {0 {vlog -work work -sv -stats=none D:/csa-2022/lab04/task2/maindec.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module maindec
+** Error: (vlog-13069) D:/csa-2022/lab04/task2/maindec.sv(3): near "op": syntax error, unexpected IDENTIFIER, expecting ')'.
+
+} {4.0 5.0} {}} D:/csa-2022/lab04/task2/controller.sv {1 {vlog -work work -sv -stats=none D:/csa-2022/lab04/task2/controller.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling package controller_sv_unit
+-- Compiling module controller
+-- Compiling module main_state_machine
+-- Compiling module aludec
+-- Compiling module instrdec
+-- Compiling module testbench
+
+Top level modules:
+	testbench
+
+} {} {}}

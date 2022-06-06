@@ -1,0 +1,26 @@
+D:/csa-2022/lab04/task3/riscvmulti.sv {1 {vlog -work work -sv -stats=none D:/csa-2022/lab04/task3/riscvmulti.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling package riscvmulti_sv_unit
+-- Compiling module testbench
+-- Compiling module top
+-- Compiling module mem
+-- Compiling module riscvmulti
+-- Compiling module controller
+-- Compiling module main_state_machine
+-- Compiling module instrdec
+-- Compiling module aludec
+-- Compiling module datapath
+-- Compiling module regfile
+-- Compiling module adder
+-- Compiling module extend
+-- Compiling module flopr
+-- Compiling module flopenr
+-- Compiling module mux2
+-- Compiling module mux3
+-- Compiling module alu
+
+Top level modules:
+	testbench
+	adder
+
+} {} {}}
